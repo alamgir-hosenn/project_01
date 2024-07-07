@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="nav__left">
+        <div class="menu">
+          <span class="material-symbols-outlined"> menu </span>
+          <p class="menu__tooltip">main menu</p>
+        </div>
+        <div class="title">
+          <h1 title="google translate">Google Translate</h1>
+        </div>
+      </div>
+      <div class="nav__right">
+        <div class="setting menu">
+          <span class="material-symbols-outlined"> settings </span>
+          <p class="setting__tooltip">Settings</p>
+        </div>
+        <div class="apps menu">
+          <span class="material-symbols-outlined"> apps </span>
+          <p class="apps__tooltip tooltip">Apps</p>
+        </div>
+        <div class="profile menu">
+          <img
+            class="t"
+            src="https://lh3.googleusercontent.com/-zMmNo04S6sM/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfkkcEoQW0lze5G14DNsTiZc764kE4g/photo.jpg?sz=46"
+            alt=""
+          />
+          <p class="google__account tooltip">Goole account</p>
+        </div>
+      </div>
+      <hr class="thin-line" />
+    </header>
+    <main>
+      <div class="buttons">
+        <button class="lang btn__style">
+          <span class="material-symbols-outlined"> translate </span>
+          <p>Text</p>
+        </button>
+
+        <button class="img btn__style">
+          <span class="material-symbols-outlined"> image </span>
+          <p>Images</p>
+        </button>
+
+        <button class="doc btn__style">
+          <span class="material-symbols-outlined"> draft </span>
+          <p>Documents</p>
+        </button>
+
+        <button class="web btn__style">
+          <span class="material-symbols-outlined"> web </span>
+          <p>Websites</p>
+        </button>
+      </div>
+
+      <section class="lang__selection">
+        <div class="from">
+          <div class="input__language">
+            <button class="detect__lang lang__btn bg__hover">
+              Detect language
+            </button>
+            <button class="english lang__btn bg__hover">English</button>
+            <button class="bengali lang__btn bg__hover">Bengali</button>
+            <button class="spanish lang__btn bg__hover">Spanish</button>
+            <div class="selection">
+              <button class="more__lang lang__btn bg__hover">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="to">
+          <div class="input__language">
+            <button class="swap__lang lang__btn bg__hover">
+              <span class="material-symbols-outlined"> swap_horiz </span>
+            </button>
+            <button class="english lang__btn bg__hover">Bengali</button>
+            <button class="bengali lang__btn bg__hover">English</button>
+            <button class="spanish lang__btn bg__hover">Spanish</button>
+            <div class="selection">
+              <button class="more__lang lang__btn bg__hover">
+                <span class="material-symbols-outlined">
+                  keyboard_arrow_down
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="text-area">
+        <div class="input__div">
+          <textarea
+            class="input__text"
+            name="input__text"
+            id="input__text"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="modify">
+            <div class="mic">
+              <span class="material-symbols-outlined"> mic </span>
+            </div>
+            <div class="word-edit">
+              <div class="word"><p>0/5000</p></div>
+              <div class="edit">
+                <span class="material-symbols-outlined"> edit </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="input__div">
+          <textarea
+            placeholder="Translation
+          "
+            disabled
+            name="output__text"
+            id="output__text"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+      </section>
+      <div class="feedback"><a href="">send feedback</a></div>
+      <div class="hidtory-section">
+        <div class="history">
+          <span class="material-symbols-outlined"> history </span>
+          <p>history</p>
+        </div>
+        <div class="saved">
+          <span class="material-symbols-outlined"> star </span>
+          <p>saved</p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

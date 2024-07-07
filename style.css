@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+:root {
+  --prmary-color: rgb(199, 198, 198);
+  --icon-color: rgb(73, 73, 73);
+}
+main {
+  margin: 0 auto;
+}
+/* ---------header starts here-----------*/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+#nav__left {
+  /* background-color: rgb(124, 134, 143); */
+  display: flex;
+  padding: 1em;
+}
+.menu {
+  /* background-color: aqua; */
+  color: var(--icon-color);
+  height: 2.5em;
+  width: 2.5em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  padding: 0 1em;
+  position: relative;
+}
+.menu:hover {
+  background-color: var(--prmary-color);
+  cursor: pointer;
+}
+.menu__tooltip {
+  position: absolute;
+  top: 2.8em;
+  left: 5px;
+  color: whitesmoke;
+  background-color: var(--icon-color);
+  padding: 0 0.3em;
+  font-weight: 400;
+  border-radius: 0.2em;
+  visibility: hidden;
+  z-index: 0;
+  width: 5.5em;
+  padding-bottom: 0.2em;
+  opacity: 0;
+  transition: visibility 0s none 0.3s;
+}
+.menu:hover .menu__tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.3s;
+}
+.menu:not(:hover) .menu__tooltip {
+  visibility: hidden;
+  opacity: 0;
+}
+.title {
+  font-weight: lighter;
+  color: var(--icon-color);
+}
+.nav__right {
+  /* background-color: rgb(67, 128, 180); */
+  display: flex;
+  padding: 1em;
+}
+
+.setting {
+  color: var(--icon-color);
+  padding: 0 0.5em;
+}
+.setting__tooltip {
+  position: absolute;
+  color: var(--prmary-color);
+  background-color: var(--icon-color);
+  padding: 0.1em 0.5em;
+  border-radius: 0.3em;
+  visibility: hidden;
+  margin-top: 04.5em;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.2s, visbility 0s 0.5s;
+}
+.setting:hover .setting__tooltip {
+  visibility: visible;
+  opacity: 1;
+  z-index: 10;
+  transition-delay: 0.5s;
+}
+.apps {
+  color: var(--icon-color);
+  padding: 0 0.5em;
+}
+.tooltip {
+  position: absolute;
+  background-color: var(--icon-color);
+  color: var(--prmary-color);
+  padding: 0.1em 0.3em 0.3em 0.3em;
+  border-radius: 0.3em;
+  margin-top: 4.5em;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2, visibility 0 0.5s;
+}
+.apps:hover .apps__tooltip {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+.profile {
+  color: var(--icon-color);
+  padding: 0 0.5em;
+}
+.profile > img {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+}
+.google__account {
+  position: absolute;
+  width: 6.5em;
+  margin-right: 3em;
+}
+
+.profile:hover .google__account {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.5s;
+}
+
+.thin-line {
+  position: absolute;
+  width: 100%;
+  border: none; /* Remove default border */
+  height: 1px; /* Set height to 1px */
+  background-color: rgb(206, 206, 206); /* Set color */
+  margin: 4em 0; /* Optional: Add some margin */
+}
+/*--------- Navbar ends here --------- */
+
+/*--------- body starts here --------- */
+/*--------- button starts here ------- */
+.buttons {
+  display: flex;
+  gap: 0.8em;
+  margin-left: 2em;
+}
+.btn__style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em 0.8em;
+  gap: 0.5em;
+  background-color: rgb(255, 255, 255);
+  color: rgb(25, 103, 210);
+  border: 0.1em solid rgb(218, 220, 224);
+  border-radius: 0.3em;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+}
+.lang {
+  /* background-color: rgb(232, 240, 254); */
+}
+.lang > p {
+  size: 5sem;
+  /* background-color: rebeccapurple; */
+}
+/*--------- button ends here ------- */
+
+/*---------- Button for languages starts here  */
+.lang__selection {
+  /* background-color: blanchedalmond; */
+  display: grid;
+  grid-template-columns: 46% 54%;
+  padding-left: 2.5em;
+}
+
+.from,
+.to {
+  /* background-color: aqua; */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 1em;
+}
+.input__language {
+  display: flex;
+  gap: 0.1em;
+}
+.lang__btn {
+  /* background-color: red; */
+  padding: 1em 0.5em;
+  border-radius: 0;
+  border: none;
+  /* background-color: rgb(253, 172, 172); */
+  background-color: white;
+  font-weight: bold;
+  color: var(--icon-color);
+}
+.swap__lang {
+  margin-right: 1.5em;
+}
+
+.selection {
+  display: flex;
+  /* background-color: red; */
+  margin-left: em;
+}
+.more__lang {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  color: var(--icon-color);
+}
+.bg__hover:hover {
+  background-color: var(--prmary-color);
+}
+
+/*----------- Button for languages ends here  */
+
+/* text area starts here  */
+
+.text-area {
+  /* background-color: antiquewhite; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  padding: 0 1em;
+  height: auto;
+}
+
+.input__div {
+  /* background-color: rgb(158, 185, 209); */
+  padding: 0.5em;
+  /* margin: 0 0.5em; */
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 0.5em;
+  /* font-size: 1.8em; */
+  height: auto;
+}
+.input__div textarea {
+  width: 100%;
+  /* background-color: rgb(233, 234, 235); */
+  border-radius: 0.5em;
+  border: none;
+  resize: none;
+  font-size: 1.5em;
+  overflow: hidden;
+  height: 5em;
+}
+.input__text:focus {
+  border: none;
+  outline: none;
+}
+/* text area ends here  */
+
+/* modify section starts here  */
+.modify {
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+.word-edit {
+  /* background-color: beige; */
+  display: flex;
+  justify-content: space-around;
+}
+.mic > span {
+  color: var(--icon-color);
+  cursor: pointer;
+  padding: 0.3em;
+  border-radius: 50%;
+  /* background-color: red; */
+}
+.mic > span:hover {
+  background-color: var(--prmary-color);
+}
+
+.edit > span {
+  /* background-color: red; */
+  padding: 0.3em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.edit > span:hover {
+  background-color: var(--prmary-color);
+}
+.word > p {
+  margin-top: 0.7em;
+  /* background-color: red; */
+}
+.feedback {
+  float: right;
+  margin-right: 2em;
+}
+.feedback > a {
+  text-decoration: none;
+  color: var(--icon-color);
+  font-size: 0.8em;
+  font-style: italic;
+}
+.feedback > a:hover {
+  text-decoration: underline;
+}
+/* modify section ends here  */
+
+/* input for language ends here  */
+
+.hidtory-section {
+  display: flex;
+  justify-content: center;
+  margin: 3em;
+}
+.hidtory-section > .history,
+.saved {
+  display: flex;
+  justify-content: center;
+  margin: 2.5em;
+  flex-direction: column;
+}
+.hidtory-section > .history > span,
+.saved > span {
+  font-size: 2em;
+  /* background-color: red; */
+  color: var(--icon-color);
+  padding: 0.6em;
+  border-radius: 50%;
+  border: 1px solid var(--prmary-color);
+}
+.hidtory-section > .history > p,
+.saved > p {
+  margin-top: 0.3em;
+  text-align: center;
+}
+/*--------- body ends here --------- */
+
+@media screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  main {
+    /* max-width: 768px; */
+  }
+  .text-area {
+    /* background-color: antiquewhite; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+    padding: 0 1em;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 726px) {
+  .spanish {
+    display: none;
+  }
+}
+@media screen and (max-width: 560px) {
+  .bengali {
+    display: none;
+  }
+}
+@media screen and (max-width: 440px) {
+  .detect__lang {
+    display: none;
+  }
+}
