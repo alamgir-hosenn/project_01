@@ -2,11 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", arial, sans-serif;
 }
 :root {
   --prmary-color: rgb(199, 198, 198);
-  --icon-color: rgb(73, 73, 73);
+  --icon-color: #5f6368;
 }
 main {
   margin: 0 auto;
@@ -205,6 +205,9 @@ header {
   background-color: white;
   font-weight: bold;
   color: var(--icon-color);
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
 }
 .swap__lang {
   margin-right: 1.5em;
@@ -326,6 +329,10 @@ header {
   justify-content: center;
   margin: 2.5em;
   flex-direction: column;
+  font-family: "Google Sans", "sans-serif";
+  color: var(--icon-color);
+  font-weight: 500;
+  font-size: 14px;
 }
 .hidtory-section > .history > span,
 .saved > span {
